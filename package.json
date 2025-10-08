@@ -11,6 +11,14 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express-session": "^1.18.2",
+    "node-cache": "^5.1.2",
+    "nodemon": "^3.1.10",
+    "open": "^10.2.0",
+    "request-promise-native": "^1.0.9"
   }
 }
