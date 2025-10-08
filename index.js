@@ -46,7 +46,8 @@ const CLIENT_SECRET = process.env.CLIENT_SECRET;
 // Scopes for this app will default to `crm.objects.contacts.read`
 // To request others, set the SCOPE environment variable instead
 let SCOPES = ["crm.objects.contacts.read",
-        "crm.objects.contacts.write"
+        "crm.objects.contacts.write",
+              "crm.objects.invoices.read"
         
         ];
 if (process.env.SCOPE) {
