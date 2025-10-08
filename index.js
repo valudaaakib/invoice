@@ -48,8 +48,7 @@ const CLIENT_SECRET = process.env.CLIENT_SECRET;
 let SCOPES = ["crm.objects.contacts.read",
         "crm.objects.contacts.write",
          "crm.objects.invoices.read",
-        "crm.objects.invoices.write",
-        "oauth"];
+        "crm.objects.invoices.write"];
 if (process.env.SCOPE) {
     SCOPES = (process.env.SCOPE.split(/ |, ?|%20/)).join(' ');
 }
