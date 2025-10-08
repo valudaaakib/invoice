@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/data", (req, res) => {
-    res.send("Hello invoice!");
+    res.send("Hello !");
 });
 
 const PORT = 5000;
