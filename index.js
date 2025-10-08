@@ -245,7 +245,7 @@ app.get("/api/hubspot/cards/invoices", async (req, res) => {
 
   try {
     // Use query parameter or default for testing
-    const contactId = req.query.contactId || req.query.objectId || 121549590224;
+    const contactId = req.query.contactId || req.query.objectId || 243967438;
     console.log("📌 Contact ID:", contactId);
 
     if (!contactId) {
