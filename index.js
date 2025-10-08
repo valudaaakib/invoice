@@ -47,14 +47,8 @@ const CLIENT_SECRET = process.env.CLIENT_SECRET;
 // To request others, set the SCOPE environment variable instead
 let SCOPES = ["crm.objects.contacts.read",
         "crm.objects.contacts.write",
-        "crm.objects.deals.read",
-        "crm.objects.deals.write",
         "crm.objects.invoices.read",
         "crm.objects.invoices.write",
-        "crm.schemas.contacts.read",
-        "crm.schemas.contacts.write",
-        "crm.schemas.invoices.read",
-        "crm.schemas.invoices.write",
         "oauth"];
 if (process.env.SCOPE) {
     SCOPES = (process.env.SCOPE.split(/ |, ?|%20/)).join(' ');
