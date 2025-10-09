@@ -9,7 +9,13 @@ const axios = require("axios");
 
 const PORT = 5000;
 
-app.use(express.json());
+app.use((req, res, next) => {
+  if (['POST', 'PUT', 'PATCH'].includes(req.method)) {
+    express.json()(req, res, next);
+  } else {
+    next();
+  }
+});
 
 app.use((req, res, next) => {
   console.log("📥 Incoming Request:");
