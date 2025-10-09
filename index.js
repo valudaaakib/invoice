@@ -275,7 +275,7 @@ app.get("/api/hubspot/cards/invoices", async (req, res) => {
       console.error("❌ Error calling Assoc API:", e.response?.data || e.message);
       return res.status(500).json({ results: [], error: e.message });
     }
-
+   console.log("✅ Assoc API Response:", assocResp);
     console.log("✅ Assoc API Response:", assocResp.data);
 
     const invoiceIds = (assocResp.data.results || []).map((r) => r.toObjectId);
