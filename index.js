@@ -328,7 +328,7 @@ app.get("/api/hubspot/cards/invoices", async (req, res) => {
       };
     });
 
-    console.log("📦 Final Results:", results.json());
+    console.log("📦 Final Results:", results);
 
     return res.json({ results });
   } catch (err) {
