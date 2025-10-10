@@ -313,6 +313,8 @@ app.get("/api/hubspot/cards/invoices", async (req, res) => {
       return res.status(500).json({ results: [], error: e.message });
     }
 
+    console.log("Betch Data==============",batchResp );
+
     console.log("✅ Batch API Response:", batchResp.data);
 
     const results = (batchResp.data.results || []).map((inv) => {
